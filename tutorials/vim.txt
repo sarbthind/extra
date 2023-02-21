@@ -1,0 +1,88 @@
+VIM:
+-> ctrl [ is equivalent to esc button and tab j is synced in vscode my personal.
+-> :set mouse=a to use mouse also in vim.
+-> :set mouse-=a to disable mouse in vim.
+-> use s to enter insert mode by deleting charing on position of cursor.
+-> use i to enter in editing mode at default cursor position.
+-> use a to enter in editing mode at one char next to default cursor position.
+-> use o to enter in editing mode at next line of default cursor position.
+-> use shift i to enter editing in beiginning of the default line.
+-> use shift a to enter editing in last of default line.
+-> use shift o to enter editing in above line of default line.
+// seriousness starts
+-> use x to delete a charactor 
+-> use dd to delete whole line.
+-> use gg to go to begining of the file.
+-> use G to go to end of the file.
+-> use ctrl d to delete rest of left side line.
+-> use yy to copy whole line.
+-> use p to paste that line to the location. press 5 p to paste 5 times.
+-> use w in normal mode to jump over the next words. w recogonise special char also as space but shitf w recogonise only space as space.
+-> w jumps to starting of every word so use e to jump to end of work same as w.
+-> press 0 to go to begining of line without insert mode shift I jumb beging of line but in insert mode.
+-> press $ to go jump in ending of a line.
+-> use b and shift b as opposite of w.
+-> use u to undo.
+-> ctrl r to redo.
+-> use esc :set number 8 to navigate to the 8th line.
+-> run program directly after saving by :!node app.js
+-> use esc :set relativenumber to show giga numbers.
+-> use 7 (j,k) to go 7 lines above or below the line.
+-> use 7 (h,l) to go 7 charactors left or right
+-> point the cursor over char hit r and new charactor to replace the charactor.
+
+
+// Real life usefull ninja techniques
+->d is to delete w is next work dw is delete next word d2w delete next 2 words.
+-> same goes for d2b db c2w c2b y2w y2b  also. and 5d5w means 5 time delete 5 words.
+if the cursor is present in the word use diw dib to delete the whole word until unless it will delete the rest of word.
+-> c means change cw to change next work and if cursor is present in the word use ciw to change whole work if we have to change some portion of the word put cursor on the word use cw to change remaining left word.
+-> 0 means begining of line d0 to delete content from cursor position to begining of line.
+
+// coding related vim:
+let say:
+print("changing the text using vim command (ci")")
+->to edit  inner text between "..."
+go inside " " press (change inner ")   ci"
+->to edit inside () {} [] go inside use ci( ci{ ci[ to edit and di( di[ di{ to delete.
+-> to jump in between  opening and closing brackets of a function use % sign.
+-> to jump a charactor use t* it will jump just before the * charactor and f* will jump exactly on the * charactor.
+-> shift t and shift f do same thing but in backward direction.
+-> use gg to begining of line then use =G to format whole document.
+-> use /helo to find helo in document. press n to jump over next helo words in document. shift n to go previous hello in document.
+-> use ?helo to search but this time n will jump back N will jump next same as / search. 
+-> place the cursor on the word use # and * to go to other occurence of the same word in the document.
+------ Marking Location in Vim ------
+to mark a specific location at which we go often place the cursor on positon press m1 means mark one ma means marked as. to use the marked position use. '1 to go to that 1 marked place. 'a to go to that marked place at a
+-> to centre the cursor position in view port use zze
+-> let say you just exicuted a long command to repeat that commmant press . for one time ..... for 5 times.
+-> pres :reg to view clipboard of vim. what every we delete or copy it is stored in vim clipboard. To use clipboard stored item press "5p to paste 5th item of clipboard.
+
+
+
+// visual mode in vim: selecting whole line by line.
+-> use shift v  to enter visual line mode. will select like normal visual mode but also can edit into line 
+-> use ctrl v to enter in visual column mode. will only select column wise.
+use v to enter in visual mode.
+use esc esc two time to exit visual mode.
+visual mode is better for copy paste and editing text.
+when we enter in visual mode we can select the text using h j k l.
+after selecting
+-> press d to delete the selection. use u to undo ctrl to redu.
+-> press y to copy the selection.
+-> press p to paste the selection to below the cursor.
+-> press shift to paste above the cursor.
+-> press c after selecting to edit in insert mode that text. // it is also a better way to shift from visual to insert mode.
+
+-> leader c to close window tab.
+-> shift h to move between workspaces.
+-> ctrl w j,k,l,h  // to move between split windows.
+-> leader e to open/close file manager.
+
+
+IN FILE MANAGER:::
+-> press d to delete selected file.
+
+IN FILE MANAGER:::
+-> press d to delete selected file.
+

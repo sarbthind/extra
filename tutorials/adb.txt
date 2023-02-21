@@ -1,0 +1,6 @@
+adb devices
+adb shell
+adb tcpip <port> // to connect using only port on one time usb need 
+adb connect <ip> // to establish wireless connection
+
+scrcpy // tool used to screen share

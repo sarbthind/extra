@@ -1,0 +1,4 @@
+tab l to insert line below
+tab f copy line down
+alt up arrow, down arrow to move line
+ ctrl / to comment out selected text.

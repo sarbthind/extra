@@ -1,0 +1,24 @@
+1. // rcs was the local vcs not better than git. only local
+2. // centralized version control system. only server
+multiple machine will make changes and will be handled by centralized.  if server get down data will lost
+3. //  distributed version control system. 
+everything in git is checksum before it is stored. and is then refered to buy that checksum. so it is impossible to change the content of file. without git knowing about it. it uses sh1 hash algorithm. 
+
+
+
+
+
+
+
+
+
+git reset --hard  // to revert all changes from last commit.
+git log
+git reset // to unstage the staged files.
+git branch -r // to see all brances
+git branch -d <branch> // to delete branch
+git diff // shows difference bw untracked and staged file.
+git diff -staged // shows difference bw last commit and staged file.
+git diff branch1 branch2
+git reset [commit id]  // This command undoes all the commits after the specified commit and preserves the changes locally.
+git reset –hard [commit id]  This command discards all history and goes back to the specified commit

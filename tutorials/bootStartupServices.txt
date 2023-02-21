@@ -1,0 +1,33 @@
+First you need to create /etc/rc.local file, if it doesn't exists.
+ sudo vi /etc/rc.local
+Contents of rc.local File
+#!/bin/bash -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+#Command or script that you want to execute it on boot
+#Assume, I want to run script
+/home/ubuntu/startup_demo
+
+exit 0
+Test script startup_demo
+./startup_demo
+Make sure /etc/rc.local file is executable.
+ sudo chmod +x /etc/rc.local
+Test script /etc/rc.local
+/etc/rc.local
+Finally, enable the service on system boot.
+ sudo systemctl enable rc-local
+Reboot system to check
+ sudo reboot
+You can check the status if you type the following command in terminal:
+ sudo systemctl status rc-local
